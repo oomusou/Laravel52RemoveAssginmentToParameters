@@ -14,6 +14,8 @@ class ShoppingCart
      */
     public function discount(int $inputVal, int $quantity, int $yearToDate) : int
     {
+        $result = $inputVal;
+
         if ($inputVal > 50) {
             $inputVal -= 2;
         }
@@ -28,5 +30,4 @@ class ShoppingCart
 
         return $inputVal;
     }
-
 }
